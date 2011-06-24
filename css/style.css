@@ -1,0 +1,369 @@
+/* Reset----------------------------------------------------------------------------*/
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+menu,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+html { overflow-y: scroll }
+ul { list-style: none }
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+a:hover,
+a:active { outline: none }
+/* Main----------------------------------------------------------------------------*/
+body {
+    font: 16px/24px Georgia, serif;
+    background: #626262;
+    margin-bottom: 1em;
+}
+h1 {
+    border-bottom: .25em double #555;
+    color: #FFF;
+    font-size: 2.5em;
+    line-height: 1.2em;
+    margin-top: .6em;
+    padding-bottom: .3em;
+    text-align: center;
+}
+h2 {
+    font-size: 2em;
+    line-height: 1.5em;
+    margin-top: .75em;
+}
+a { color: #fff }
+a:hover {
+    color: #009bdb;
+    text-decoration: none;
+}
+#main {
+    width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+/* Commons----------------------------------------------------------------------------*/
+#thumbnails200,
+#thumbnails100,
+#thumbnails300,
+#thumbnails400 {
+    margin: 2em 0;
+    float: left;
+    display: inline;
+}
+#thumbnails200 ul,
+#thumbnails100 ul,
+#thumbnails300 ul,
+#thumbnails400 {
+    float: left;
+    list-style-type: none;
+    margin-top: 1em;
+}
+#thumbnails200 li,
+#thumbnails100 li,
+#thumbnails400 li {
+    display: inline;
+    float: left;
+    margin: 0 15px;
+    position: relative;
+}
+#thumbnails300 li {
+    display: inline;
+    float: left;
+    margin: 0 7px;
+    position: relative;
+}
+#thumbnails400 li { margin: 0 30px }
+footer {
+    float: left;
+    display: inline;
+    width: 990px;
+    border-top: .25em double #555;
+    padding-top: .3em;
+}
+footer p { text-align: center }
+/* Width 100px----------------------------------------------------------------------------*/
+.w100 img {
+    position: relative;
+    left: 10px;
+}
+.w100 span {
+    background: url(../images/t100_body.png) repeat-y scroll 0 0 transparent;
+    display: block;
+    float: left;
+    height: 60px;/**** height de la imagen ****/
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 122px;
+    z-index: 1;
+}
+.w100 span:before {
+    content: "";
+    background: url(../images/t100_top.png) no-repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    height: 12px;
+    left: 0;
+    position: absolute;
+    top: -5px;
+    width: 122px;
+    z-index: 1;
+}
+.w100 span:after {
+    content: "";
+    background: url(../images/t100_bottom.png) no-repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    height: 25px;
+    left: 0;
+    position: absolute;
+    top: 35px; /**** height de la imagen - height de span: after ****/
+    width: 120px;
+    z-index: 1;
+}
+/* Width 200px----------------------------------------------------------------------------*/
+.w200 img {
+    position: relative;
+    left: 10px;
+}
+.w200 span {
+    background: url(../images/t200_body.png) repeat-y scroll 0 0 transparent;
+    display: block;
+    float: left;
+    height: 250px;/****	height de la imagen ****/
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 220px;
+    z-index: 1;
+}
+.w200 span:before {
+    content: "";
+    background: url(../images/t200_top.png) no-repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    height: 12px;
+    left: 0;
+    position: absolute;
+    top: -5px;
+    width: 220px;
+    z-index: 1;
+}
+.w200 span:after {
+    content: "";
+    background: url(../images/t200_bottom.png) no-repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    height: 25px;
+    left: 0;
+    position: absolute;
+    top: 225px;/**** height de la imagen - height de span: after ****/;
+    width: 225px;
+    z-index: 1;
+}
+/* Width 300px----------------------------------------------------------------------------*/
+.w300 img {
+    position: relative;
+    left: 10px;
+}
+.w300 span {
+    background: url(../images/t300_body.png) repeat-y scroll 0 0 transparent;
+    display: block;
+    float: left;
+    height: 200px;/****	height de la imagen ****/
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 320px;
+    z-index: 1;
+}
+.w300 span:before {
+    content: "";
+    background: url(../images/t300_top.png) no-repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    height: 20px;
+    left: 0;
+    position: absolute;
+    top: -5px;
+    width: 320px;
+    z-index: 1;
+}
+.w300 span:after {
+    content: "";
+    background: url(../images/t300_bottom.png) no-repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    height: 30px;
+    left: 0;
+    position: absolute;
+    top: 170px;/**** height de la imagen - height de span: after ****/;
+    width: 320px;
+    z-index: 1;
+}
+/* Width 400px----------------------------------------------------------------------------*/
+.w400 img {
+    position: relative;
+    left: 10px;
+}
+.w400 a { display: block }
+.w400 span {
+    background: url(../images/t400_body.png) repeat-y scroll 0 0 transparent;
+    display: block;
+    float: left;
+    height: 300px;/****	height de la imagen ****/
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 420px;
+    z-index: 1;
+}
+.w400 span:before {
+    content: "";
+    background: url(../images/t400_top.png) no-repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    height: 20px;
+    left: 0;
+    position: absolute;
+    top: -5px;
+    width: 420px;
+    z-index: 1;
+}
+.w400 span:after {
+    content: "";
+    background: url(../images/t400_bottom.png) no-repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    height: 35px;
+    left: 0;
+    position: absolute;
+    top: 265px;/**** height de la imagen - height de span: after ****/;
+    width: 420px;
+    z-index: 1;
+}
+/* Meta datos----------------------------------------------------------------------------*/
+.meta {
+    height: 40px;
+    margin-left: 25px;
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+.meta img {
+    float: left;
+    display: inline;
+    margin-right: 10px;
+    position: inherit;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -moz-box-shadow: 0 1px 3px #333;
+    -webkit-box-shadow: 0 1px 3px #333;
+    box-shadow: 0 1px 3px #333;
+}
+.meta a {
+    color: #999;
+    display: inline-block;
+    float: left;
+    font-size: .75em;
+    line-height: .75em;
+    margin-top: .28em;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.meta a:hover { color: #fff }
+#follow_user { font-weight: inherit }
+/* Preloader----------------------------------------------------------------------------*/
+.preload {
+    display: block;
+    background: #000 url(../images/loader.gif) no-repeat center center;
+}
+#thumbnails100 .preload {
+    height: 55px;
+    width: 110px;
+}
+#thumbnails200 .preload {
+    height: 250px;
+    width: 210px;
+}
+#thumbnails300 .preload {
+    height: 200px;
+    width: 310px;
+}
+#thumbnails400 .preload {
+    height: 300px;
+    width: 410px;
+}
